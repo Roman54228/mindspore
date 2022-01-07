@@ -80,19 +80,19 @@ Taking the FP16 operator as an example, if the input data type is FP32, the Mind
   ├─scripts
     ├─run_train.sh
     ├─run_eval.sh
-    ├─run_distribute_train.sh              # Start Ascend distributed training（8p）
-    ├─run_distribute_eval.sh               # Start Ascend distributed evaluation (8p)
-    └─run_infer_310.sh                     # 启动310推理
+    ├─run_distribute_train.sh              # start Ascend distributed training（8p）
+    ├─run_distribute_eval.sh               # start Ascend distributed evaluation (8p)
+    └─run_infer_310.sh                     # start 310 inference
   ├─src
     ├─datasets
-      ├─autoaug.py                  # 随机数据增强方法
-      ├─dataset.py                  # 数据集处理
+      ├─autoaug.py                  # random data augmentation
+      ├─dataset.py                  # dataset processing
     ├─models
-      ├─resnest.py                  # ResNeSt50网络定义
-      ├─resnet.py                   # 主干网络
+      ├─resnest.py                  # ResNeSt50 network definition
+      ├─resnet.py                   # backbone network
       ├─splat.py                    # split-attention
-      ├─utils.py                    # 工具函数：网络获取、加载权重等
-    ├─config.py                       # 参数配置
+      ├─utils.py                    # Tool functions: network acquistion, loading weights, etc.
+    ├─config.py                       # parameter configuration
     ├─crossentropy.py                 # 交叉熵损失函数
     ├─eval_callback.py                # 推理信息打印
     ├─logging.py                      # 日志记录
